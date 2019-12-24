@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import NavHeader from './components/navHeader/navHeader'
+import Square from './components/square/square'
+import './App.css'
 
-function App() {
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <NavHeader message='This is the NavHeader component'>
+      <Square color={0} />
+      <Square color={1} />
+      <Square color={2} />
+      <Square color={3} />
+      <Square color={4} />
+      <Square color={5} />
+    </NavHeader>
+  )
 }
 
-export default App;
+export default App
