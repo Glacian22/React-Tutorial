@@ -2,17 +2,30 @@ import React from 'react'
 import NavHeader from './components/navHeader/navHeader'
 import Square from './components/square/square'
 import './App.css'
+import { statement } from '@babel/template'
 
 function App () {
+  let palettes = [['blue', 'red', 'green', 'orange', 'purple', 'yellow'],
+    ['grey', 'white', 'peachpuff', 'black', 'brown', 'magenta']]
+
+  const [palette, setPalette] = React.useState(palettes[0])
+
   return (
-    <NavHeader message='This is the NavHeader component'>
-      <Square color={0} />
-      <Square color={1} />
-      <Square color={2} />
-      <Square color={3} />
-      <Square color={4} />
-      <Square color={5} />
-    </NavHeader>
+    <React.Fragment>
+      <NavHeader message='This is the NavHeader component'>
+        <Square colors={palette} color={0} />
+        <Square colors={palette} color={1} />
+        <Square colors={palette} color={2} />
+        <Square colors={palette} color={3} />
+        <Square colors={palette} color={4} />
+        <Square colors={palette} color={5} />
+      </NavHeader>
+      <div>
+        <button onClick={() => palette[0] === 'blue' ? setPalette(palettes[1]) : setPalette(palettes[0])}>
+          Switch Palette
+        </button>
+      </div>
+    </React.Fragment>
   )
 }
 

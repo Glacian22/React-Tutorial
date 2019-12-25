@@ -2,7 +2,7 @@ import React from 'react'
 import './square.css'
 
 let Square = props => {
-  let colors = ['blue', 'red', 'green', 'orange', 'purple', 'yellow']
+  let colors = props.colors
 
   const [color, setColor] = React.useState(props.color)
   return (
