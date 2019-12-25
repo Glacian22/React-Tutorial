@@ -2,7 +2,6 @@ import React from 'react'
 import NavHeader from './components/navHeader/navHeader'
 import Square from './components/square/square'
 import './App.css'
-import { statement } from '@babel/template'
 
 function App () {
   let palettes = [['blue', 'red', 'green', 'orange', 'purple', 'yellow'],
@@ -20,11 +19,9 @@ function App () {
         <Square colors={palette} color={4} />
         <Square colors={palette} color={5} />
       </NavHeader>
-      <div>
-        <button onClick={() => palette[0] === 'blue' ? setPalette(palettes[1]) : setPalette(palettes[0])}>
+      <button onClick={() => palette[0] === 'blue' ? setPalette(palettes[1]) : setPalette(palettes[0])}>
           Switch Palette
-        </button>
-      </div>
+      </button>
     </React.Fragment>
   )
 }
