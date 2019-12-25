@@ -10,3 +10,4 @@ There are no external dependencies other than what create-react-app bundles in.
 
 To give it a try, clone the repo and run `npm i` to install all dependencies, then `npm start` to launch the app 
 
+[![React-Squares.gif](https://s5.gifyu.com/images/React-Squares.gif)](https://gifyu.com/image/mwnd)
