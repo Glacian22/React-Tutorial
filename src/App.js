@@ -3,6 +3,7 @@ import NavHeader from './components/navHeader/navHeader'
 import Square from './components/square/square'
 import './App.css'
 
+document.title = 'Color Boxes React Demo'
 function App () {
   let palettes = [['blue', 'red', 'green', 'orange', 'purple', 'yellow'],
     ['grey', 'white', 'peachpuff', 'black', 'brown', 'magenta']]
