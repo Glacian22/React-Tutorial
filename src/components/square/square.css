@@ -1,5 +1,10 @@
 .square {
   height: 100px;
   width: 100px;
-  display: inline-block
+  display: inline-block;
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  text-decoration: double;
+  margin-bottom: 0px
 }

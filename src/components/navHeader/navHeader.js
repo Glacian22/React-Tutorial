@@ -1,4 +1,5 @@
 import React from 'react'
+import './navHeader.css'
 
 let NavHeader = props => {
   return (
