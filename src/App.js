@@ -8,11 +8,14 @@ function App () {
   let palettes = [['blue', 'red', 'green', 'orange', 'purple', 'yellow'],
     ['grey', 'white', 'peachpuff', 'black', 'brown', 'magenta']]
 
+  // In class components we use a state object. In function components we use individual state variables
+  // React.useState takes an initial value and returns an array with the state variable and it's setter
   const [palette, setPalette] = React.useState(palettes[0])
 
   return (
     <React.Fragment>
       <NavHeader message='This is the NavHeader component'>
+        {/* Anything between a component's open and close tags will be automatically passed to it as "children" */}
         <Square colors={palette} color={0} />
         <Square colors={palette} color={1} />
         <Square colors={palette} color={2} />
