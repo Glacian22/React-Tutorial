@@ -17,7 +17,8 @@ function App () {
       <NavHeader message='This is the NavHeader component'>
         {/* Anything between a component's open and close tags will be automatically passed to it
          as the 'children' array in the component's 'props' object */}
-        <Square colors={palette} color={0} /> {/* passing the current palette and starting color as props */}
+        {/* passing the current palette and starting color as props */}
+        <Square colors={palette} color={0} />
         <Square colors={palette} color={1} />
         <Square colors={palette} color={2} />
         <Square colors={palette} color={3} />
